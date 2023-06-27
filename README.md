@@ -5,6 +5,8 @@
 ## Screenshots
 
 <img src="https://i.postimg.cc/jS0FF2bp/s1.png" width="300" />
+<img src="https://i.postimg.cc/sgYNdzfv/s2.png" width="300" />
+<img src="https://i.postimg.cc/pXnSC8gQ/s3.png" width="300" />
 
 
 
