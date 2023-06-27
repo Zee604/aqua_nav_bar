@@ -1,23 +1,24 @@
-###Aqua_Nav_Bar
+## Aqua_Nav_Bar
 
-#The Aqua_Nav_Bar Flutter package provides a beautiful and customizable navigation bar for your Flutter applications. It offers a sleek and modern design with smooth animations, making it perfect for enhancing the user experience in your app.
+**The Aqua_Nav_Bar Flutter package provides a beautiful and customizable navigation bar for your Flutter applications. It offers a sleek and modern design with smooth animations, making it perfect for enhancing the user experience in your app.**
 
 ## Screenshots
 
 <img src="https://i.postimg.cc/jS0FF2bp/s1.png" width="300" />
 <img src="https://i.postimg.cc/sgYNdzfv/s2.png" width="300" />
-<img src="https://i.postimg.cc/pXnSC8gQ/s3.png" width="300" />
+
+[comment]: <> (<img src="https://i.postimg.cc/pXnSC8gQ/s3.png" width="300" />)
 
 
 
-##Features
-• Beautiful and modern design.
-• Smooth and fluid animations.
-• Customizable colors, icons, and labels.
-• Support for both iOS and Android platforms.
+## Features
+• Beautiful and modern design.<br>
+• Smooth and fluid animations.<br>
+• Customizable colors, icons, and labels.<br>
+• Support for both iOS and Android platforms.<br>
 • Easy integration with existing Flutter projects.
 
-##Installation
+## Installation
 To use the Aqua_Nav_Bar package, follow these steps:
 
 1. Add the package to your pubspec.yaml file:
@@ -35,7 +36,7 @@ To use the Aqua_Nav_Bar package, follow these steps:
 import 'package:aqua_nav_bar/aqua_nav_bar.dart';
 ```
 
-##Usage
+## Usage
 To use the Aqua_Nav_Bar in your Flutter app, see example:
 
 ```dart
@@ -101,8 +102,8 @@ class _HomePageState extends State<HomePage> {
 }
 ```
 
-##Contributions and Support
+## Contributions and Support
 Contributions to the Aqua_Nav_Bar Flutter package are welcomed and encouraged! If you encounter any issues or have suggestions for improvement, please open an issue on the package's [GitHub repository](https://github.com/Zee604/aqua_nav_bar.git).
 
-##License
-This project is licensed under the [MIT License](https://opensource.org/license/mit/).
+## License
+**This project is licensed under the [MIT License](https://opensource.org/license/mit/).**
