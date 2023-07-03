@@ -1,6 +1,6 @@
-## Aqua_Nav_Bar
+## Aqua Nav Bar
 
-**The Aqua_Nav_Bar Flutter package provides a beautiful and customizable navigation bar for your Flutter applications. It offers a sleek and modern design with smooth animations, making it perfect for enhancing the user experience in your app.**
+The Aqua_Nav_Bar Flutter package provides a beautiful and customizable navigation bar for your Flutter applications. It offers a sleek and modern design with smooth animations, making it perfect for enhancing the user experience in your app.
 
 ## Screenshots
 
