@@ -32,7 +32,7 @@ class ButtonWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           icon,
-          SizedBox(height: index == selectedIndex ? 8 : 3.0, width: 0.0,),
+          SizedBox(height: index == selectedIndex ? 10 : 3.0, width: 0.0,),
           index != selectedIndex ? Text(title,
                   style: TextStyle(
                     fontSize: textSize,
@@ -42,7 +42,7 @@ class ButtonWidget extends StatelessWidget {
             flipY: true,
                     child: CustomPaint(
             // The Size Of The Canvas
-            size: const Size(70, 22),
+            size: const Size(70, 24),
             // The First Painter In The Stack
             painter: CurvedPainter(
               selectedColor
