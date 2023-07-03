@@ -1,3 +1,5 @@
-## 1.0.2
+## 1.0.3
 
-- Current version: 1.0.2
+- Change Curves Height
+- Minor Bug fixes
+- Title Color added
