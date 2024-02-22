@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-class BarItem{
+class BarItem {
   /// Title
   final String title;
+
   /// Icon
-  final Widget icon;
+  final Icon icon;
 
   BarItem({
     required this.title,

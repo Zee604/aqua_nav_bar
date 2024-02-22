@@ -1,13 +1,11 @@
 ## Aqua Nav Bar
 
-The Aqua_Nav_Bar Flutter package provides a beautiful and customizable navigation bar for your Flutter applications. It offers a sleek and modern design with smooth animations, making it perfect for enhancing the user experience in your app.
+The Aqua Nav Bar Flutter package provides a beautiful and customizable navigation bar for your Flutter applications. It offers a sleek and modern design with smooth animations, making it perfect for enhancing the user experience in your app.
 
 ## Screenshots
 
 <img src="https://i.postimg.cc/jS0FF2bp/s1.png" width="300" />
 <img src="https://i.postimg.cc/sgYNdzfv/s2.png" width="300" />
-
-[comment]: <> (<img src="https://i.postimg.cc/pXnSC8gQ/s3.png" width="300" />)
 
 
 
@@ -55,19 +53,19 @@ class _HomePageState extends State<HomePage> {
     const ItemThree()
   ];
 
-  int selectedIndex = 0;
+  int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue.shade400,
+      backgroundColor: Colors.white,
       bottomNavigationBar: AquaNavBar(
-        selectedIndex: selectedIndex,
+        currentIndex: currentIndex,
         textSize: 15.0,
-        titleColor: Colors.grey,
+        activeColor: Colors.grey,
         onItemSelected: (index){
           setState(() {
-            selectedIndex = index;
+            currentIndex = index;
           });
         },
         barItems: [
@@ -95,7 +93,7 @@ class _HomePageState extends State<HomePage> {
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child:  _navPages[selectedIndex],
+        child:  _navPages[currentIndex],
       ),
     );
   }

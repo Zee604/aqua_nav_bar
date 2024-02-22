@@ -10,9 +10,10 @@ class ButtonWidget extends StatelessWidget {
   final int selectedIndex;
   final double textSize;
   final Color titleColor;
-  final Color selectedColor;
+  final Color activeColor;
 
-  const ButtonWidget({Key? key,
+  const ButtonWidget({
+    Key? key,
     required this.icon,
     required this.title,
     required this.onPressed,
@@ -20,8 +21,7 @@ class ButtonWidget extends StatelessWidget {
     required this.selectedIndex,
     required this.textSize,
     required this.titleColor,
-    required this.selectedColor,
-
+    required this.activeColor,
   }) : super(key: key);
 
   @override
@@ -32,25 +32,31 @@ class ButtonWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           icon,
-          SizedBox(height: index == selectedIndex ? 10 : 3.0, width: 0.0,),
-          index != selectedIndex ? Text(title,
-                  style: TextStyle(
-                    fontSize: textSize,
-                    color: titleColor,
-                    fontWeight: FontWeight.bold
-                  ),) : Transform.flip(
-            flipY: true,
-                    child: CustomPaint(
-            // The Size Of The Canvas
-            size: const Size(70, 24),
-            // The First Painter In The Stack
-            painter: CurvedPainter(
-              selectedColor
-            ),
-
+          SizedBox(
+            height: index == selectedIndex ? 6 : 3.0,
+            width: 0.0,
           ),
+          index != selectedIndex
+              ? Text(
+                  title,
+                  style: TextStyle(
+                      fontSize: textSize,
+                      color: titleColor,
+                      fontWeight: FontWeight.bold),
+                )
+              : Transform.flip(
+                  flipY: true,
+                  child: CustomPaint(
+                    // The Size Of The Canvas
+                    size: const Size(70, 24),
+                    // The First Painter In The Stack
+                    painter: CurvedPainter(activeColor),
                   ),
-          SizedBox(height: index == selectedIndex ? 0 : 10.0, width: 0.0,),
+                ),
+          SizedBox(
+            height: index == selectedIndex ? 0 : 10.0,
+            width: 0.0,
+          ),
         ],
       ),
     );

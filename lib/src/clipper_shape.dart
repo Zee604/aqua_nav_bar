@@ -1,27 +1,12 @@
-
 import 'package:flutter/material.dart';
 
 class CurvedPainter extends CustomPainter {
-   final Color selectedColor;
+  final Color selectedColor;
 
-   CurvedPainter(this.selectedColor);
+  CurvedPainter(this.selectedColor);
 
   @override
   void paint(Canvas canvas, Size size) {
-
-    /*Paint paint = Paint()..color = selectedColor;
-    Path path = Path()
-      ..moveTo(0, size.height )
-      ..quadraticBezierTo(
-          size.width /2 ,
-          -14,
-          size.width ,
-          size.height)
-      ..lineTo(size.width, size.height)
-      ..lineTo(0, size.height)
-      ..close();
-    canvas.drawPath(path, paint);*/
-
     Path path = Path();
 
     path.cubicTo(
@@ -56,9 +41,8 @@ class CurvedPainter extends CustomPainter {
     canvas.drawPath(path, fillColor);
   }
 
-   @override
-   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-     return true;
-   }
-
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) {
+    return true;
   }
+}
